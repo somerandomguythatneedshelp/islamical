@@ -10,6 +10,29 @@
   }
 }
 
+.arabic-surahtitle {
+  font-family: "surahnames";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.arabic-verse-text {
+
+  font-size: 2.5rem;
+  line-height: 1.5;
+  direction: rtl;
+  text-align: justify;
+  text-align-last: right;
+  margin-right: -190px;
+}
+
+.arabic-text {
+  font-family: 'Arabic', sans-serif;
+  margin-left: 100px;
+}
+
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -120,7 +143,7 @@ body {
 }
 
 .arabic-verse-text {
-  font-family: "UthmanicHafs";
+
   font-size: 2.5rem;
   line-height: 1.5;
   direction: rtl;
@@ -189,4 +212,12 @@ body {
   .english-verse-text {
     font-size: 1rem;
   }
+}
+
+.surahname {
+  font-family: "surahnames", sans-serif;
+}
+
+.arabic-text {
+  font-family: "UthmanicHafs", sans-serif;
 }

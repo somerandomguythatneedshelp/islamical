@@ -5,6 +5,8 @@ import { useRouter } from 'next/navigation';
 import { FaRegBookmark, FaBookmark } from 'react-icons/fa';
 import Cookies from 'js-cookie';
 import BookmarkModal from '@/app/components/BookmarkModal';
+import { Surahnames, UthmanicHafs } from '@/app/utils/fonts';
+
 
 interface QuranVerseProps {
   verses: any[];
@@ -214,9 +216,9 @@ relative top-0 right-0 mr-6 mt-6 text-white hover:bg-gray-500 rounded-lg w-12 h-
             </div>
               <div className="mb-6 relative text-white" style={{ minHeight: '75px', right: '250px' }}>
                 <div className="w-full arabic-verse-container"> {/* New class added */}
-                  <p className="arabic-verse-text"> {/* New class added */}
-                    {verse.text}
-                  </p>
+                <p key={verse.id} className="arabic-text arabic-verse-text">
+          {verse.text}
+        </p>
                 </div>
               </div>
               <div className="mt-2 english-verse-container"> {/* New class added */}

@@ -10,8 +10,10 @@
     "export": "next export"
   },
   "dependencies": {
+    "@next/font": "^14.2.4",
     "@vercel/speed-insights": "^1.0.12",
     "axios": "^1.7.2",
+    "file-loader": "^6.2.0",
     "firebase": "^10.12.3",
     "js-cookie": "^3.0.5",
     "next": "^14.2.4",

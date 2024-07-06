@@ -106,6 +106,7 @@ body {
 }
 
 
+
 @font-face {
   font-family: 'Arabic';
   src: url('/public/font/lang/arabic/NotoNaskhArabic-Regular.ttf') format('truetype');
@@ -214,10 +215,13 @@ body {
   }
 }
 
-.surahname {
-  font-family: "surahnames", sans-serif;
-}
-
 .arabic-text {
   font-family: "UthmanicHafs", sans-serif;
+}
+
+.arabic-surahtitle {
+  font-family: "surahnames";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }

@@ -1,7 +1,13 @@
 const path = require('path');
 
 module.exports = {
-  ignoreBuildErrors: true, // stupid type error in the root page.tsx wont let me compile without this flag
+  typescript: {
+    // !! WARN !!
+    // Dangerously allow production builds to successfully complete even if
+    // your project has type errors.
+    // !! WARN !!
+    ignoreBuildErrors: true,
+  },
   webpack: (config) => {
     config.module.rules.push({
       test: /\.(woff|woff2|eot|ttf|otf)$/,

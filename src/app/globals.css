@@ -1,0 +1,192 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: rgb(255, 255, 255);
+    --background-start-rgb: 16, 16, 20;
+    --background-end-rgb: 16, 16, 20
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@font-face {
+  font-family: 'en';
+  src: url('/public/font/lang/urdu/MehrNastaliqWeb.ttf') format('ttf'),
+       url('/public/font/lang/urdu/MehrNastaliqWeb.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.arabic-text-container {
+  margin-left: 100px;
+}
+
+@layer utilities {
+  .font-en {
+    font-family: 'en', sans-serif;
+  }
+}
+
+.arabic-surahtitle {
+  font-family: "surahnames";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "surahnames";
+  src: url("/fonts/quran/surah-names/v1/sura_names.woff2"),
+    url("/fonts/quran/quran/surah-names/v1/sura_names.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "UthmanicHafs";
+  src: local("KFGQPC HAFS Uthmanic Script"),
+    url("/fonts/quran/hafs/uthmanic_hafs/UthmanicHafs1Ver18.woff2")
+      format("woff2"),
+    url("/fonts/quran/hafs/uthmanic_hafs/UthmanicHafs1Ver18.ttf")
+      format("truetype");
+  font-display: swap;
+  unicode-range: U+0600-06FF;
+}
+
+
+@font-face {
+  font-family: "surahnames";
+  src: url("/fonts/quran/surah-names/v1/sura_names.woff2"),
+    url("/fonts/quran/quran/surah-names/v1/sura_names.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Arabic';
+  src: url('/public/font/lang/arabic/NotoNaskhArabic-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.arabic-text {
+  font-family: 'Arabic', sans-serif;
+  margin-left: 100px;
+}
+
+/* Apply the Arabic font to the Arabic text */
+.arabic-text {
+  font-family: 'Arabic Font', sans-serif;
+}
+
+/* Apply the Surah Names font to the Surah name */
+.surah-name {
+  font-family: 'Surah Names Font', sans-serif;
+}
+
+.surah-separator {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 255), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 255));
+  margin: 50px 0;
+  width: calc(100% - 50px);
+}
+
+/* New styles for Arabic verse text */
+.arabic-verse-container {
+  padding-left: 275px; /* Adjust this value to move text more to the left */
+  padding-right: -300px; /* Add some padding on the right side */
+}
+
+.arabic-verse-text {
+  font-family: "UthmanicHafs";
+  font-size: 2.5rem;
+  line-height: 1.5;
+  direction: rtl;
+  text-align: justify;
+  text-align-last: right;
+  margin-right: -190px;
+}
+
+
+.english-verse-container {
+  padding-left: 15px;
+  padding-right: 300px;
+}
+
+.english-verse-text {
+  font-family: Arial, sans-serif; /* You can change this to your preferred English font */
+  font-size: 1.25rem; /* Adjust size as needed */
+  line-height: 1.6;
+  text-align: justify;
+  color: #ffffff; 
+}
+
+.verse-counter {
+  font-size: large;
+}
+
+.quran-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  position: sticky;
+  bottom: 0;
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  z-index: 1;
+}
+
+.quran-footer button {
+  background-color: transparent;
+  color: #4e4e4e;
+  border: 1px solid #4e4e4e;
+  padding: 15px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+  margin: 0 10px;
+}
+
+.quran-footer button:hover {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+
+@media (max-width: 768px) {
+  .arabic-verse-text {
+    font-size: 1.5rem;
+  }
+
+  .english-verse-text {
+    font-size: 1rem;
+  }
+}

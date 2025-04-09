@@ -1,0 +1,20 @@
+﻿{
+  "name": "Islamical",
+  "short_name": "Islamical",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000",
+  "theme_color": "#000",
+  "icons": [
+    {
+      "src": "/images/favicon",
+      "sizes": "4096x4096",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

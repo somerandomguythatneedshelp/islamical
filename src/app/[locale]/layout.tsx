@@ -44,37 +44,42 @@ export default async function RootLayout({
       <head>
         <link
           rel="canonical"
-          href={`https://next-app-i18n-starter.vercel.app`}
+          href={`https://islamical.vercel.app`}
         />
         <link
           rel="alternate"
           hrefLang="x-default"
-          href="https://next-app-i18n-starter.vercel.app"
+          href="https://islamical.vercel.app"
         />
         <link
           rel="alternate"
           hrefLang="en"
-          href="https://next-app-i18n-starter.vercel.app/en"
+          href="https://islamical.vercel.app/en"
         />
         <link
           rel="alternate"
           hrefLang="ar"
-          href="https://next-app-i18n-starter.vercel.app/ar"
+          href="https://islamical.vercel.app/ar"
         />
         <link
           rel="alternate"
           hrefLang="zh"
-          href="https://next-app-i18n-starter.vercel.app/zh"
+          href="https://islamical.vercel.app/zh"
         />
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+        <link rel="manifest" href="/manifest.json" />
         <meta name="keywords" content={t("keywords")} />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,viewport-fit=cover" />
         <script
           {...jsonLdScriptProps<WebSite>({
             "@context": "https://schema.org",
             "@type": "WebSite",
             name: t("title"),
             description: t("description"),
-            url: "https://next-app-i18n-starter.vercel.app",
+            url: "https://islamical.vercel.app",
             inLanguage: locale,
           })}
         />
@@ -122,11 +127,11 @@ export async function generateMetadata({
     openGraph: {
       title: t("title"),
       description: t("description"),
-      url: `https://next-app-i18n-starter.vercel.app`,
-      siteName: "Next.js i18n Boilerplate",
+      url: `islamical.vercel.app`,
+      siteName: "Islamical",
       images: [
         {
-          url: "https://next-app-i18n-starter.vercel.app/og-image.png",
+          url: "https://islamical.vercel.app/images/favicon.png",
           width: 1200,
           height: 630,
         },
@@ -138,14 +143,14 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: t("title"),
       description: t("description"),
-      images: ["https://next-app-i18n-starter.vercel.app/og-image.png"],
+      images: ["https://islamical.vercel.app/og-image.png"],
     },
     alternates: {
-      canonical: `https://next-app-i18n-starter.vercel.app`,
+      canonical: `https://islamical.vercel.app`,
       languages: {
-        en: "https://next-app-i18n-starter.vercel.app/en",
-        ar: "https://next-app-i18n-starter.vercel.app/ar",
-        zh: "https://next-app-i18n-starter.vercel.app/zh",
+        en: "https://islamical.vercel.app/en",
+        ar: "https://islamical.vercel.app/ar",
+        zh: "https://islamical.vercel.app/zh",
       },
     },
     robots: {

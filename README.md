@@ -12,7 +12,7 @@ A modern, SEO-optimized template for Next.js 15 applications featuring server co
 - **Language Switching**: Seamless switching between languages (including RTL support for Arabic and other RTL languages)
 - **OmitRTL Utility**: Helper component to control elements that should maintain LTR (left-to-right) rendering in RTL contexts
 - **TypeScript**: Type-safe codebase with TypeScript configuration optimized for Next.js 15
-- **Metadata API**: Built-in SEO metadata management using Next.js 15's metadata API
+- **Metadata API**: Built-in SEO metadata managment using Next.js 15's metadata API
 
 ## 🚀 Getting Started
 
